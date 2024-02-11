@@ -18,43 +18,43 @@ html {
 header {
   background: #f7f5f5;
   width: 100vw;
-  padding: .8rem;
+  padding: 0.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.nav-logo img{
+.nav-logo img {
   width: 14vw;
   margin-left: 2rem;
 }
 
-nav{
+nav {
   display: flex;
   width: 100vw;
   /* background: #000; */
-  padding: .8rem;
+  padding: 0.8rem;
   align-items: center;
   gap: 20rem;
   border-bottom: 1px solid grey;
 }
 
-.other-links{
-  display: flex; 
+.other-links {
+  display: flex;
   align-items: center;
   gap: 2rem;
   margin-left: -10rem;
 }
 
-.nav-links{
-  display: flex; 
+.nav-links {
+  display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
 /*style for input */
-.search-input{
+.search-input {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,65 +62,65 @@ nav{
   background: none;
   width: 27vw;
   height: 2.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid rgb(191, 190, 190);
 }
 
-.search-input input{
-width: 20vw;
-padding: 5px;
-background: none;
-border: none;
-outline: none;
+.search-input input {
+  width: 20vw;
+  padding: 5px;
+  background: none;
+  border: none;
+  outline: none;
 }
 
-.search-input input::placeholder{
+.search-input input::placeholder {
   text-transform: capitalize;
   text-align: center;
   color: rgb(171, 171, 171);
 }
 
 /*for the nav-links*/
-.nav-links select{
-  padding: .4vw;
+.nav-links select {
+  padding: 0.4vw;
   background: none;
   border: none;
 }
-.cart-icon{
+.cart-icon {
   display: flex;
   align-items: center;
-  gap: .3vw;
+  gap: 0.3vw;
 }
-.login-btn{
+.login-btn {
   background: rgb(65, 114, 219);
-  padding: .5rem;
+  padding: 0.5rem;
   width: 7vw;
   height: 6vh;
   border-radius: 5px;
   color: #f5f5f5;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-transform: capitalize;
   cursor: pointer;
   border: none;
 }
-.signup-btn{
-  padding: .5rem;
+.signup-btn {
+  padding: 0.5rem;
   border: 1px solid rgb(188, 186, 186);
   width: 7vw;
   height: 6vh;
   border-radius: 5px;
   color: #000000;
-  font-size: .9rem;
+  font-size: 0.9rem;
   white-space: nowrap;
   text-transform: capitalize;
   cursor: pointer;
 }
 
-.burger{
+.burger {
   display: none;
 }
-.bar{
+.bar {
   width: 30;
   border-radius: 5px;
   height: 5px;
@@ -128,19 +128,19 @@ outline: none;
   margin: 3px;
 }
 /*navigation link with toggle function*/
-.navigation-links{
-  padding: .6rem;
+.navigation-links {
+  padding: 0.6rem;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
   margin-top: 4px;
 }
 
-.navigation-links ul{
+.navigation-links ul {
   text-align: center;
 }
 
-.navigation-links ul a{
+.navigation-links ul a {
   padding: 26px;
   text-transform: capitalize;
   text-decoration: none;
@@ -148,154 +148,174 @@ outline: none;
 }
 
 /*hero section */
-.main-container{
+.main-container {
   display: flex;
-  overflow: hidden;
-  height:80vh;
-  min-height:100%;
-  background:linear-gradient( rgba(229, 239, 255, 0.844), rgba(229, 239, 255, 0.876)), url(../images/hero-bg.png);
-  background-size:cover;
+  height: 85vh;
+  min-height: 100%;
+  background: linear-gradient(
+      rgba(229, 239, 255, 0.844),
+      rgba(229, 239, 255, 0.876)
+    ),
+    url(../images/hero-bg.png);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.main-content{
+.main-content {
   padding-top: 7rem;
   padding-left: 5rem;
   width: 50vw;
   text-transform: capitalize;
 }
-.main-content h2{
+.main-content h2 {
   font-size: 3.8vw;
   width: 50vw;
   font-weight: bolder;
 }
 
-.main-content h2 span{
+.main-content h2 span {
   color: rgba(37, 110, 228, 1);
   font-style: italic;
 }
 
-.main-content p{
+.main-content p {
   width: 45vw;
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 1.2rem;
 }
 
-.main-content button{
+.main-content button {
   width: 12vw;
   height: 3.2rem;
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 1.2rem;
   text-transform: capitalize;
-  padding: .5rem;
+  padding: 0.5rem;
   border: none;
-  background: rgba(37, 110, 228, 1);;
+  background: rgba(37, 110, 228, 1);
   color: #fefefe;
-  border-radius:5px;
+  border-radius: 5px;
+  white-space: nowrap;
 }
-.main-container-image{
+.main-container-image {
   width: 50vw;
 }
+.main-container-image img {
+  width: 102%;
+}
 
-
-
-
+/*card-section */
+.card-section{
+  width: 100vw;
+  height: 60vh;
+  background: rgba(242, 247, 255, 1);
+}
+.card {
+  width: 85vw;
+  height: 15vh;
+  background: #cbc9c9;
+  position:absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 /*laptop responsive */
 @media (max-width: 1024px) {
-  body{
+  body {
     font-size: 14px;
   }
-header{
-  overflow: hidden;
-}
+  header {
+    overflow: hidden;
+  }
 
-  .other-links{
+  .other-links {
     margin-left: -15rem;
     width: 100vw;
   }
 
-  .search-input{
+  .search-input {
     width: 28vw;
   }
 
-.search-input input{
-  font-size: .8rem ;
-  margin-left: -2rem;
-  width: 25vw;
-}
+  .search-input input {
+    font-size: 0.8rem;
+    margin-left: -2rem;
+    width: 25vw;
+  }
 
-.nav-links{
-  margin-left: -10px;
-  width: 20vw;
-}
+  .nav-links {
+    margin-left: -10px;
+    width: 20vw;
+  }
 
-/* .nav-links select{
+  /* .nav-links select{
   /* display: none; */
- */
+  */ .nav-links button {
+    width: 10vw;
+  }
 
-.nav-links button{
-  width: 10vw;
-}
-
-.navigation-links{
-width: 100%;
-}
+  .navigation-links {
+    width: 100%;
+  }
 }
 
 /* tablet design with toogle*/
 @media (max-width: 768px) {
-  body{
+  body {
     font-size: 14px;
   }
-header{
-  overflow: hidden;
-  width: 100vw;
-  text-align: center;
-}
-nav{
-  align-items: center;
-}
+  header {
+    overflow: hidden;
+    width: 100vw;
+    text-align: center;
+  }
+  nav {
+    align-items: center;
+  }
 
-/* .other-links{
+  /* .other-links{
   margin-left: -rem;
 } */
 
-  .nav-logo img{
+  .nav-logo img {
     width: 10rem;
   }
 
-  .search-input{
+  .search-input {
     width: 5rem;
   }
 
-.search-input input{
-  display: none;
-}
+  .search-input input {
+    display: none;
+  }
 
+  .nav-links select {
+    display: none;
+  }
 
-.nav-links select{
-  display: none;
-}
+  .nav-links button {
+    width: 5rem;
+  }
 
-.nav-links button {
-  width: 5rem;
-}
+  .cart-icon label {
+    display: none;
+  }
 
-.cart-icon label{
-  display: none;
-}
+  .burger {
+    display: block;
+    margin-left: -6rem;
+  }
 
-.burger{
-  display: block;
-  margin-left: -6rem;
-}
-
-.navigation-links{
-width: 100%;
-}
-
+  .navigation-links {
+    width: 100%;
+  }
 }
