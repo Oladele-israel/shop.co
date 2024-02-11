@@ -3,43 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop.co</title>
-    <link rel="stylesheet" href="./styles/home.css">
+    <title>NeraMarkt.co</title>
+    <link rel="stylesheet" href="./styles/home.css" />
   </head>
   <body>
     <header>
       <nav>
         <!--logo-->
-        <div class="nav-logo">SHOP.CO</div>
-        <div class="nav-links">
-            <!--shop select and nav links-->
-          <select name="" id="">
-            <option value="shop">shop</option>
-          </select>
-          <div class="nav-anchor">
-            <a href=""> On safe</a>
-            <a href="">new arrivals</a>
-            <a href="">brands </a>
-          </div>
-          <!--search bar including the shopping and acct icon-->
-          <div class="others">
-            <div class="search-input">
-                <img src="./images/search-icon.png" alt="">
-                <input  type="text" placeholder="search for products"/>
-            </div>
-            <div class="nav-icon">
-                <img src="./images/shopping-icon.png" alt="">
-                <img src="./images/acct-icon.png" alt="">
-            </div>
-          </div>
+        <div class="nav-logo">
+          <img src="./images/nera-market.png" alt="nera-market logo" />
+        </div>
 
+        <!--search bar including the shopping and acct icon-->
+        <div class="other-links">
+          <div class="search-input">
+            <img src="./images/header-search.png" alt="" />
+            <input type="text" placeholder="search for products and categories" />
+          </div>
+          
+          <div class="nav-links">
+            <select name="" id="">
+              <option value="shop">international</option>
+            </select>
+            <div class="cart-icon">
+              <label for="cart">cart</label>
+              <img src="./images/cart-icon.png" alt="">
+            </div>
+            <button class="login-btn">login</button>
+            <button class="signup-btn">sign Up</button>
+          </div>
+          <!--buger-toggle-->
           <div class="burger">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
         </div>
+        </div>
       </nav>
+
+      <!--navigation-links-->
+      <div class="navigation-links">
+        <ul>
+          <a href="#">home</a>
+          <a href="#">
+            <select name="" id="">
+              <option value="">All categories</option>
+              <option value="">clothes</option>
+            </select>
+          </a>
+          <a href="#">sell on NeraMarkt</a>
+          <a href="#">about</a>
+          <a href="#">support</a>
+          <a href="#"> track order</a>
+        </ul>
+      </div>
     </header>
+<!--main part-->
+    <main class="main-container">
+      <div class="main-content">
+        <h2>send <span>goods and services</span> without stress. </h2>
+        <p>an easier way to send goods and services to friends and loved one all over the world!</p>
+        <button>shop now</button>
+      </div>
+      <div class="main-container-image">
+        <img src="./images/hero-left-img.png" alt="">
+      </div>
+    </main>
   </body>
 </html>

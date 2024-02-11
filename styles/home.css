@@ -12,149 +12,291 @@ body {
 }
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 header {
-  background: #f5f5f5;
+  background: #f7f5f5;
   width: 100vw;
-}
-
-nav {
+  padding: .8rem;
   display: flex;
-  align-items: center;
-  gap: 3rem;
-  padding: 20px;
-  width: 100vw;
-}
-
-.nav-logo {
-  margin-left: 6rem;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-
-.nav-links select {
-  background: none;
-  padding: 0.4rem;
-  width: 5rem;
-  border: none;
-  font-size: 1rem;
-  text-transform: capitalize;
-  outline: none;
-}
-
-.nav-anchor a {
-  padding: 10px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: black;
-  font-weight: lighter;
-}
-
-.others {
-  display: flex;
-  justify-content: space-around;
-  width: 40rem;
   align-items: center;
 }
 
-.search-input {
-  width: 70%;
-  background: #ebebeb;
-  padding: 0.6rem;
+.nav-logo img{
+  width: 14vw;
+  margin-left: 2rem;
+}
+
+nav{
   display: flex;
+  width: 100vw;
+  /* background: #000; */
+  padding: .8rem;
+  align-items: center;
+  gap: 20rem;
+  border-bottom: 1px solid grey;
+}
+
+.other-links{
+  display: flex; 
   align-items: center;
   gap: 2rem;
-  border-radius: 5rem;
-}
-.search-input input{
-    display: none;
-}
-.search-input input.show {
-  width: 80%;
-  height: 1.9rem;
-  padding: 0.5rem;
-  border: none;
-  background: none;
-  outline: none;
+  margin-left: -10rem;
 }
 
-.nav-icon {
+.nav-links{
+  display: flex; 
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/*style for input */
+.search-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background: none;
+  width: 27vw;
+  height: 2.5rem;
+  padding: .5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(191, 190, 190);
+}
+
+.search-input input{
+width: 20vw;
+padding: 5px;
+background: none;
+border: none;
+outline: none;
+}
+
+.search-input input::placeholder{
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(171, 171, 171);
+}
+
+/*for the nav-links*/
+.nav-links select{
+  padding: .4vw;
+  background: none;
+  border: none;
+}
+.cart-icon{
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-  margin-right: 3rem;
+  gap: .3vw;
+}
+.login-btn{
+  background: rgb(65, 114, 219);
+  padding: .5rem;
+  width: 7vw;
+  height: 6vh;
+  border-radius: 5px;
+  color: #f5f5f5;
+  font-size: .9rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+}
+.signup-btn{
+  padding: .5rem;
+  border: 1px solid rgb(188, 186, 186);
+  width: 7vw;
+  height: 6vh;
+  border-radius: 5px;
+  color: #000000;
+  font-size: .9rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
-.burger {
+.burger{
   display: none;
 }
-
-.bar {
-  background: #000;
-  width: 2.2rem;
-  height: 0.4rem;
-  margin: 5px;
+.bar{
+  width: 30;
   border-radius: 5px;
+  height: 5px;
+  background: #6d6b6b;
+  margin: 3px;
+}
+/*navigation link with toggle function*/
+.navigation-links{
+  padding: .6rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 4px;
 }
 
-@media (max-width: 768px) {
-  body {
-    background: #c0c0c0;
-  }
-  nav {
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
+.navigation-links ul{
+  text-align: center;
+}
 
-  .nav-logo {
-    margin-left: 15px;
-    font-size: 1.8rem;
-    font-weight: 900;
-  }
+.navigation-links ul a{
+  padding: 26px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(162, 162, 162);
+}
 
-  .search-input {
-    width: 40%;
-    margin-left: -2.2rem;
-    background: none;
-    gap: 0;
-  }
+/*hero section */
+.main-container{
+  display: flex;
+  height: 90vh;
+  min-height:100%;
+  background:linear-gradient( rgba(229, 239, 255, 0.844), rgba(229, 239, 255, 0.876)), url(../images/hero-bg.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
 
-  .nav-icon {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    margin-right: 24rem;
-  }
+.main-content{
+  padding-top: 7rem;
+  padding-left: 5rem;
+  width: 50vw;
+  text-transform: capitalize;
+}
+.main-content h2{
+  font-size: 3.8vw;
+  width: 50vw;
+  font-weight: bolder;
+}
 
-  .nav-links select {
-    display: none;
-  }
+.main-content h2 span{
+  color: rgba(37, 110, 228, 1);
+  font-style: italic;
+}
 
-  .nav-anchor {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    top: 15%;
-    right: -50rem;
-    /* left: 0; */
-    background: #3f3e3e;
-    height: 23vh;
+.main-content p{
+  width: 45vw;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+}
+
+.main-content button{
+  width: 12vw;
+  height: 3.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  text-transform: capitalize;
+  padding: .5rem;
+  border: none;
+  background: rgba(37, 110, 228, 1);;
+  color: #fefefe;
+  border-radius:5px;
+}
+.main-container-image{
+  width: 50vw;
+}
+
+.main-container-image img{
+  width: 50vw;
+}
+
+
+
+
+/*laptop responsive */
+@media (max-width: 1024px) {
+  body{
+    font-size: 14px;
+  }
+header{
+  overflow: hidden;
+}
+
+  .other-links{
+    margin-left: -15rem;
     width: 100vw;
   }
 
-  .burger {
-    display: block;
-    margin-left: -200px;
+  .search-input{
+    width: 28vw;
   }
+
+.search-input input{
+  font-size: .8rem ;
+  margin-left: -2rem;
+  width: 25vw;
+}
+
+.nav-links{
+  margin-left: -10px;
+  width: 20vw;
+}
+
+/* .nav-links select{
+  /* display: none; */
+ */
+
+.nav-links button{
+  width: 10vw;
+}
+
+.navigation-links{
+width: 100%;
+}
+}
+
+/* tablet design with toogle*/
+@media (max-width: 768px) {
+  body{
+    font-size: 14px;
+  }
+header{
+  overflow: hidden;
+  width: 100vw;
+  text-align: center;
+}
+nav{
+  align-items: center;
+}
+
+/* .other-links{
+  margin-left: -rem;
+} */
+
+  .nav-logo img{
+    width: 10rem;
+  }
+
+  .search-input{
+    width: 5rem;
+  }
+
+.search-input input{
+  display: none;
+}
+
+
+.nav-links select{
+  display: none;
+}
+
+.nav-links button {
+  width: 5rem;
+}
+
+.cart-icon label{
+  display: none;
+}
+
+.burger{
+  display: block;
+  margin-left: -6rem;
+}
+
+.navigation-links{
+width: 100%;
+}
+
 }
