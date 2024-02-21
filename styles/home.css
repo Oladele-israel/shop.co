@@ -16,7 +16,7 @@ html {
 }
 
 header {
-  background: #f7f5f5;
+  background: #ffffff;
   width: 100vw;
   padding: 0.8rem;
   display: flex;
@@ -30,14 +30,14 @@ header {
   margin-left: 2rem;
 }
 
-nav {
+.nav {
   display: flex;
   width: 100vw;
   /* background: #000; */
   padding: 0.8rem;
   align-items: center;
   gap: 20rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(228, 226, 226);
 }
 
 .other-links {
@@ -117,16 +117,6 @@ nav {
   cursor: pointer;
 }
 
-.burger {
-  display: none;
-}
-.bar {
-  width: 30;
-  border-radius: 5px;
-  height: 5px;
-  background: #6d6b6b;
-  margin: 3px;
-}
 /*navigation link with toggle function*/
 .navigation-links {
   padding: 0.6rem;
@@ -145,6 +135,10 @@ nav {
   text-transform: capitalize;
   text-decoration: none;
   color: rgb(162, 162, 162);
+}
+
+.mobile-nav{
+  display: none;
 }
 
 /*hero section */
@@ -211,11 +205,12 @@ nav {
   width: 100vw;
   height: 60vh;
   background: rgba(242, 247, 255, 1);
+  
 }
 .card {
   width: 85vw;
   height: 15vh;
-  background: #cbc9c9;
+  background: #ffffff;
   position:absolute;
   top: 100%;
   left: 0;
@@ -225,8 +220,103 @@ nav {
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  padding: 1.2rem;
+  box-shadow: 0px 2px 13px 0px rgba(177, 172, 172, 0.75);
+  overflow: hidden;
 }
 
+.card1:last-child{
+  border-right: none!important;
+}
+
+.card1{
+  padding: 1.2rem;
+  display: flex;
+  gap: .9rem;
+  align-items: center;
+  text-transform: capitalize;
+  border-right: 1px solid rgb(217, 217, 217);
+}
+
+.card1 div{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+/*for the product list */
+
+.services{
+  width: 100vw;
+    padding: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.products{
+  margin-top: -20rem;
+width: 100vw;
+  padding: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.products-list {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;align-items: center;
+  justify-content: center;
+  gap: 1.2rem
+}
+
+.product1{
+  background: #ffffff;
+  padding: .6rem;
+  width: 20vw;
+  height: 40vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product1:hover{
+  box-shadow: 0px 2px 13px 0px rgba(175, 174, 174, 0.75);
+}
+
+.product-image img{
+  width: 19vw;
+}
+
+.product-detail{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 100%;
+}
+
+.product-detail-title{
+ text-transform: capitalize;
+ font-weight: bolder;
+ align-self: flex-start;
+}
+
+.product-price{
+  align-self: flex-start;
+  display: flex;
+  gap: 6rem;
+}
+
+.product-price span:first-child{
+  color: #393939;
+}
+
+.product-price span:first-child strong{
+  color: #000000;
+}
+
+.product-price span:last-child{
+  color: rgba(37, 110, 228, 1);
+}
 
 /*laptop responsive */
 @media (max-width: 1024px) {
@@ -278,44 +368,55 @@ nav {
     width: 100vw;
     text-align: center;
   }
-  nav {
+  .nav, .navigation-links{
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+    gap: 2rem;
+  }
+  .mobile-other-links{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .mobile-search-input{
+    background: #f4f4f4;
+    border-radius: 5px;
+    width: 40vw;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 6px;
   }
 
-  /* .other-links{
-  margin-left: -rem;
-} */
-
-  .nav-logo img {
-    width: 10rem;
+  .mobile-search-input input{
+    width: 34vw;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: none;
   }
 
-  .search-input {
-    width: 5rem;
+  .burger{
+    position: relative;
   }
 
-  .search-input input {
-    display: none;
+  .tab{
+    width: 6vw;
+    height: 1.2vh;
+    background: #393939;
+    margin: 5px;
+    border-radius: 5px;
   }
 
-  .nav-links select {
-    display: none;
-  }
-
-  .nav-links button {
-    width: 5rem;
-  }
-
-  .cart-icon label {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-    margin-left: -6rem;
-  }
-
-  .navigation-links {
-    width: 100%;
+  .mobile-links{
+    position: absolute;
+    background: #0530af;
+    top: 13%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
