@@ -338,7 +338,6 @@ header {
   align-items: center;
 }
 
-
 .service-detail {
   display: flex;
   flex-direction: column;
@@ -369,42 +368,45 @@ header {
 /*the flier section */
 .fliers {
   /* background: #f3f2f2; */
-  width: 95vw;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  height: 120vh;
-  padding: 1rem;
+  height: auto;
+  padding: 0.2rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  gap: 1.2rem;
+  gap: 0.1rem;
 }
 
 .rice-flier {
   background: url(../images/riceFlier.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 95vw;
-  height: 70vh;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .food-flier {
   display: flex;
-  margin-top: -6rem;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 50vh;
-  gap: 1rem;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 1rem;
+  gap: 0.5rem;
+  background: #f9f9f9;
 }
 
 .food1 {
-  width: 48%;
-  height: 60vh;
+  width: 45%;
+  height: auto;
   background: url(../images/food-flierImg.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -412,10 +414,11 @@ header {
 }
 
 .food2 {
-  width: 48%;
-  height: 60vh;
+  width: 45%;
+  height: auto;
   background: url(../images/pharma.png);
-  background-size: contain;
+  background-color: #fbfbfb;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -432,27 +435,27 @@ header {
 
 .food1 span:nth-child(2),
 .food2 span:nth-child(2) {
-  font-size: 2rem;
-  width: 27vw;
+  font-size: 1.5rem;
+  width: 20rem;
   font-weight: bolder;
   color: #f4f4f4;
 }
 
 .food1 button,
 .food2 button {
-  width: 14vw;
+  width: 14rem;
   padding: 0.7rem;
   border-radius: 5px;
   color: #0530af;
   font-size: 1.2rem;
   border: none;
   text-transform: capitalize;
+  white-space: no-wrap;
 }
 
 /*card list component */
 .fresh-product {
   text-align: center;
-  margin-top: -3rem;
 }
 .fresh-list {
   padding: 3rem;
@@ -464,15 +467,16 @@ header {
 .fresh-card {
   background: #ffffff;
   padding: 0.6rem;
-  width: 20vw;
+  width: 16rem;
   height: 45vh;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .fresh-image img {
-  width: 18vw;
+  width: 15rem;
 }
 .fresh-card:hover {
   box-shadow: 0px 2px 13px 0px rgba(175, 174, 174, 0.75);
@@ -715,25 +719,166 @@ header {
 
   .product1 {
     width: 15rem;
-    height: 13rem;
+    height: 15rem;
     background: #ffffff;
     padding: 0.4rem;
+  }
+
+  .product-image img{
+    width: 13rem;
   }
   .services-list {
     flex-wrap: wrap;
   }
 
-  .service{
-    width: 15rem;
-    height:16rem ;
+  .service {
+    width: 17rem;
+    height: 16rem;
   }
-  .service-image img{
+  .service-image img {
     width: 10rem;
   }
+  .rice-flier {
+    height: 10rem;
+  }
+  .food-flier {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .food1{
+    height: 12rem;
+  }
+
+  .food1 span:first-child,
+  .food2 span:first-child {
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #f4f4f4;
+  }
+
+  .food1 span:nth-child(2),
+  .food2 span:nth-child(2) {
+    font-size: 1rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #f4f4f4;
+  }
+
+  .food1 button,
+  .food2 button {
+    width: 8rem;
+    padding: 0.4rem;
+    border-radius: 5px;
+    color: #0530af;
+    font-size: 1rem;
+    border: none;
+    text-transform: capitalize;
+    white-space: no-wrap;
+  }
+
+  .fresh-product {
+    text-align: center;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .fresh-list {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: .2rem; 
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .fresh-card {
+    padding: 0.1rem;
+    width: 16rem;
+    height: 15rem;
+    font-size: .2rem;
+  }
+  .fresh-image img {
+    width: 12rem;
+  }
+ 
+    
+  .fresh-title span:first-child {
+    font-size: 1rem;
+  }
+  
+  .fresh-title span:nth-child(2) {
+    font-size: 1rem;
+    color: grey;
+  }
+  
+  .star {
+    margin-top: 0.5rem;
+  }
+  .star img{
+    width:9rem;
+  }
+  
 }
 
 @media (max-width: 569px) {
   .products {
     margin-top: -8rem;
+  }
+
+  .rice-flier{
+    background-size: contain;
+    width: 100%;
+  }
+
+  .food-flier {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .food1, .food2{
+    height: 12rem;
+    width: 100%;
+  }
+
+  .fresh-list {
+    padding: 3rem;
+    background: #ebebeb;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: .2rem; 
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .fresh-card {
+    padding: 0.1rem;
+    width: 26rem;
+    height: 15rem;
+    font-size: .2rem;
+  }
+  .fresh-image img {
+    width: 12rem;
+  }
+
+  .product1 {
+    width: 25rem;
+    height: 15rem;
+    background: #ffffff;
+    padding: 0.4rem;
+  }
+
+  .service {
+    width: 27rem;
+    height: 20rem;
+  }
+
+  .service-image img{
+    width: 13rem;
   }
 }
