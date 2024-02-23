@@ -1003,3 +1003,49 @@ header {
     width: 12rem;
   }  
 }
+@media screen and (max-width: 412px) {
+  body {
+    font-size: 12px;
+    overflow-x: hidden;
+  }
+  .main-container{
+    height: 30rem;
+  }
+  .main-content{
+    height: 27rem;
+  }
+
+  .main-content h2, p,button {
+    margin-left: -3rem;
+  }
+
+  .card {
+    margin-top: -35rem;
+  }
+  .products{
+    margin-top: -15rem;
+  }
+  .service {
+    width: 22rem;
+    height: 19rem;
+  }
+  .service-image img {
+    width: 13rem;
+  }
+  
+  .fresh-product {
+    font-size: .7rem;
+  }
+  .fresh-list {
+    grid-template-columns: 1fr ;
+  }
+  .fresh-card {
+    padding: 0.1rem;
+    width: 16rem;
+    height: 15rem;
+    font-size: .2rem;
+  }
+  .fresh-image img {
+    width: 12rem;
+  }  
+}
