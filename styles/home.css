@@ -26,9 +26,12 @@ header {
   align-items: center;
 }
 
-.nav-logo img {
+.nav-logo {
   width: 14vw;
   margin-left: 2rem;
+  color: #0530af;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 .nav {
@@ -383,12 +386,18 @@ header {
 }
 
 .rice-flier {
-  background: url(../images/riceFlier.png);
+  background: #000;
   background-repeat: no-repeat;
   background-size: contain;
   width: 85%;
+  height: 18rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.rice-flier img {
+  width: 100%;
+  height: 18rem;
 }
 
 .food-flier {
@@ -530,6 +539,133 @@ header {
   margin-top: 0.5rem;
 }
 
+/*for the last banner List */
+.shopp-banner {
+  background: rgb(240, 197, 118);
+  width: 90vw;
+  height: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.banner-images {
+  background: orange;
+  width: 55%;
+  height: 20rem;
+  display: flex;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.banner-images img {
+  width: 18rem;
+}
+
+.banner-images img:last-child {
+  width: 20rem;
+}
+
+.banner-writeup {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem;
+  align-items: center;
+}
+.banner-writeup span:first-child {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  align-self: flex-start;
+}
+
+.banner-writeup span:nth-child(2) {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  align-self: flex-start;
+}
+
+.banner-writeup button {
+  align-self: flex-start;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  width: 14rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/*styling for mobile app ad */
+
+.mobileApp-ad {
+  background: linear-gradient(
+      rgba(229, 239, 255, 0.844),
+      rgba(229, 239, 255, 0.876)
+    ),
+    url(../images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: 3rem;
+  display: flex;
+}
+
+.mobileApp-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileApp-detail span:nth-child(1) {
+  font-size: 1.5rem;
+  color: #0530af;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.mobileApp-detail span:nth-child(2) {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 0.2rem;
+}
+.mobileApp-detail span:nth-child(3) {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+.mobileApp-detail span:last-child {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  color: #0530af;
+  font-weight: bold;
+}
+
+.mobile-store {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.mobileApp-store img {
+  width: 14rem;
+}
+
+.mobileMock {
+  width: 50%;
+}
+
+.mobileMock img {
+  width: 34rem;
+}
+/**style for a brief form/
+
 /*laptop responsive */
 @media screen and (max-width: 1024px) {
   body {
@@ -592,8 +728,11 @@ header {
     align-items: center;
   }
 
-  .mobile-logo img {
+  .mobile-logo {
     width: 18vw;
+    font-size: 1.5rem;
+    color: #0530af;
+    font-weight: bolder;
   }
   .mobile-other-links {
     display: flex;
