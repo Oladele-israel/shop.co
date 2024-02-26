@@ -95,6 +95,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.3vw;
+  cursor: pointer;
 }
 .login-btn {
   background: rgb(65, 114, 219);
@@ -1153,6 +1154,233 @@ footer {
   .star img {
     width: 9rem;
   }
+  .shopp-banner {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .banner-images img {
+    width: 10rem;
+  }
+
+  .banner-images img:last-child {
+    width: 10rem;
+  }
+
+  .banner-writeup {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+    background: #b5b3b3;
+  }
+  .banner-writeup span:first-child {
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    align-self: flex-start;
+    width: 20rem;
+  }
+
+  .banner-writeup span:nth-child(2) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    align-self: flex-start;
+    text-align: center;
+  }
+
+  .banner-writeup button {
+    background: orange;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  .mobileApp-detail {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 4rem;
+    gap: 1rem;
+  }
+
+  .mobileApp-detail span:nth-child(3) {
+    width: 60vw;
+  }
+  .mobileApp-detail span:nth-child(5) {
+    font-size: 2vw;
+  }
+
+  .mobile-store {
+    width: 60vw;
+  }
+  .mobile-store img {
+    width: 15vw;
+  }
+
+  .mobileMock {
+    width: 50%;
+    display: none;
+  }
+
+  .mobileMock img {
+    width: 38rem;
+    display: none;
+  }
+  /**style for a brief form-card */
+  .form-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-card span:nth-child(1) {
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .form-card span:nth-child(2) {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    width: 40rem;
+    margin-top: 1.5rem;
+  }
+
+  .form-card span:nth-child(3) {
+    display: flex;
+    margin-top: 1rem;
+    gap: 10px;
+  }
+
+  .form-card span:nth-child(3) input {
+    width: 20rem;
+    padding: 0.8rem;
+  }
+
+  .form-card span:nth-child(3) button {
+    font-size: 1.1rem;
+  }
+  /*footer styles */
+  footer {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-footer-container {
+    display: flex;
+    gap: 4rem;
+  }
+  .left-container1 {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .left-container1 span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .left-container1 span:nth-child(2) {
+    font-size: 1.1rem;
+    width: 17rem;
+    text-align: left;
+  }
+  .left-container2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-container2 span:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .left-container2-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .left-container2-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+
+  /*for the right footer*/
+  .right-footer-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: -7rem;
+  }
+
+  .right-footer-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+
+  .right-footer-container1 span:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .right-footer-container1 span:nth-child(2),
+  .right-footer-container1 span:nth-child(3) {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+
+  .right-footer-container1 span:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+  }
+  .right-footer-container1-images {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .right-footer-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+
+  .right-footer-container2 span:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .right-footer-container2 span:nth-child(2) {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+  .footer-input input {
+    width: 13rem;
+  }
+  .footer-input button {
+    width: 10rem;
+    background: #4d71df;
+    color: #ebebeb;
+    border: none;
+    padding: 8px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+  .page-author {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #373737;
+  }
 }
 
 @media screen and (max-width: 569px) {
@@ -1216,6 +1444,223 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+  body {
+    font-size: 12px;
+    overflow-x: hidden;
+  }
+  .main-container {
+    height: 30rem;
+  }
+  .main-content {
+    height: 27rem;
+  }
+
+  .main-content h2,
+  p,
+  button {
+    margin-left: -3rem;
+  }
+
+  .card {
+    margin-top: -21rem;
+  }
+  .products {
+    margin-top: -1rem;
+  }
+  .service {
+    width: 22rem;
+    height: 19rem;
+  }
+  .service-image img {
+    width: 13rem;
+  }
+
+  .fresh-product {
+    font-size: 0.7rem;
+  }
+  .fresh-list {
+    grid-template-columns: 1fr;
+  }
+  .fresh-card {
+    padding: 0.1rem;
+    width: 16rem;
+    height: 15rem;
+    font-size: 0.2rem;
+  }
+  .fresh-image img {
+    width: 12rem;
+  }
+  .mobileApp-detail {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 4rem;
+    gap: 0.7rem;
+  }
+
+  .mobileApp-detail span:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .mobileApp-detail span:nth-child(2) {
+    width: 70vw;
+    font-size: 1.6rem;
+  }
+
+  .mobileApp-detail span:nth-child(3) {
+    width: 70vw;
+  }
+  .mobileApp-detail span:nth-child(5) {
+    font-size: 1.2rem;
+  }
+
+  .mobile-store {
+    width: 60vw;
+  }
+  .mobile-store img {
+    width: 20vw;
+  }
+
+  /**style for a brief form-card */
+  .form-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-card span:nth-child(1) {
+    font-size: 1.3rem;
+  }
+  .form-card span:nth-child(2) {
+    font-size: 0.8rem;
+    width: 20rem;
+    font-weight: normal;
+  }
+
+  .form-card span:nth-child(3) {
+    display: flex;
+    margin-top: 1rem;
+    gap: 10px;
+  }
+
+  .form-card span:nth-child(3) input {
+    width: 13rem;
+    padding: 0.5rem;
+  }
+
+  .form-card span:nth-child(3) button {
+    width: 10rem;
+  }
+  /*footer styles */
+  footer {
+    width: 90vw;
+  }
+  .left-footer-container {
+    display: flex;
+    gap: 1rem;
+  }
+  .left-container1 {
+    display: flex;
+  }
+  .left-container1 span:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .left-container2 span:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .left-container2-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .left-container2-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+
+  /*for the right footer*/
+  .right-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .right-footer-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .right-footer-container1 span:nth-child(1) {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+
+  .right-footer-container1 span:nth-child(2),
+  .right-footer-container1 span:nth-child(3) {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-left: 2rem;
+  }
+
+  .right-footer-container1 span:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  .right-footer-container1 span:nth-child(4) p {
+    margin-left: 2rem;
+  }
+  .right-footer-container1-images {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .right-footer-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .right-footer-container2 span:nth-child(1) {
+    font-size: 1.2rem;
+    margin-left: -3rem;
+  }
+
+  .right-footer-container2 span:nth-child(2) {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-left: -3rem;
+    width: 15rem;
+  }
+  .footer-input {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .footer-input input {
+    width: 13rem;
+    margin-left: -3rem;
+  }
+
+  .page-author {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #373737;
+  }
+}
+
+@media screen and (max-width: 412px) {
   body {
     font-size: 12px;
     overflow-x: hidden;
@@ -1299,54 +1744,6 @@ footer {
     flex-wrap: wrap;
   }
 
-  .service {
-    width: 22rem;
-    height: 19rem;
-  }
-  .service-image img {
-    width: 13rem;
-  }
-
-  .fresh-product {
-    font-size: 0.7rem;
-  }
-  .fresh-list {
-    grid-template-columns: 1fr;
-  }
-  .fresh-card {
-    padding: 0.1rem;
-    width: 16rem;
-    height: 15rem;
-    font-size: 0.2rem;
-  }
-  .fresh-image img {
-    width: 12rem;
-  }
-}
-@media screen and (max-width: 412px) {
-  body {
-    font-size: 12px;
-    overflow-x: hidden;
-  }
-  .main-container {
-    height: 30rem;
-  }
-  .main-content {
-    height: 27rem;
-  }
-
-  .main-content h2,
-  p,
-  button {
-    margin-left: -3rem;
-  }
-
-  .card {
-    margin-top: -21rem;
-  }
-  .products {
-    margin-top: -1rem;
-  }
   .service {
     width: 22rem;
     height: 19rem;
