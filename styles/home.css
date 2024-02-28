@@ -742,177 +742,750 @@ font-size: 1.1rem;
   border: none;
 }
 /*footer styles */
-footer {
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  margin-top: 2rem;
-  gap: 2rem;
-  border-bottom: 3px solid #c7c6c6;
-}
-.left-footer-container {
-  display: flex;
-}
-.left-container1 {
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  justify-content: left;
-}
-.left-container1 span:nth-child(1) {
-  font-size: 2.6rem;
-  font-weight: bold;
-  color: #0530af;
-  margin-top: 3rem;
-}
-.left-container1 span:nth-child(2) {
-  font-size: 1.2rem;
-  width: 17rem;
-  text-align: left;
-}
-.left-container2 {
-  display: flex;
-  flex-direction: column;
-  width:20rem ;
-  margin-left: 2rem;
-}
-.left-container2 span:nth-child(1) {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.left-container2-links {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  margin-top: 1.2rem;
-}
-
-.left-container2-links a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #000;
-}
-
-/*for the right footer*/
-.right-footer-container {
-  display: flex;
-  flex-direction: row;
-  margin-left: -27rem;
-  gap: 2.5rem;
-}
-
-.right-footer-container1 {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
-}
-
-.right-footer-container1 span:nth-child(1) {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.right-footer-container1 span:nth-child(2),
-.right-footer-container1 span:nth-child(3) {
-  font-size: 1.2rem;
-  text-transform: capitalize;
-}
-
-.right-footer-container1 span:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  gap: 1rem;
-  width: 15rem;
-  margin-left: 20px;
-}
-.right-footer-container1-images {
-  display: flex;
-  gap: 2rem;
-}
-
-.right-footer-container2 {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
-}
-
-.right-footer-container2 span:nth-child(1) {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.right-footer-container2 span:nth-child(2) {
-  font-size: 1.2rem;
-  text-transform: capitalize;
-}
-.footer-input input {
-  width: 25rem;
-  padding: 10px;
-  background: #e2e1e1;
-  border: none;
-}
-.footer-input button {
-  width: 10rem;
-  background: #4d71df;
-  color: #ebebeb;
-  border: none;
-  padding: 10px;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-}
-.page-author {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.2rem;
-  color: #373737;
-}
 
 /*laptop responsive */
 @media screen and (max-width: 1024px) {
   body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  html {
     font-size: 14px;
   }
+  
   header {
+    background: #ffffff;
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    width: 15vw;
+    margin-left: 1rem;
+    color: #0530af;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  .nav {
+    display: flex;
+    width: 100vw;
+    /* background: #000; */
+    padding: 0.8rem;
+    align-items: center;
+    gap: 9rem;
+    border-bottom: 1.3px solid rgb(228, 226, 226);
+  }
+  
+  .other-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: -8rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+  }
+  
+  /*style for input */
+  .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: none;
+    width: 28vw;
+    height: 2.5rem;
+    padding: 1.6rem;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 190, 190);
+  }
+  
+  .search-input input {
+    width: 20vw;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .search-input input::placeholder {
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(171, 171, 171);
+  }
+  
+  /*for the nav-links*/
+  .nav-links select {
+    padding: 0.4vw;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #585858;
+  }
+  .cart-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #585858;
+  }
+  .cart-icon a{
+    text-decoration: none;
+     color: #585858;
+  
+  }
+  .login-btn {
+    background: rgb(65, 114, 219);
+    padding: 1rem;
+    width: 10vw;
+    height: 8vh;
+    border-radius: 5px;
+    color: #f5f5f5;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+  }
+  .signup-btn {
+    padding: 0.5rem;
+    border: 1px solid rgb(188, 186, 186);
+    width: 10vw;
+    height: 8vh;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  
+  /*navigation link with toggle function*/
+  .navigation-links {
+    padding: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 4px;
+  }
+  
+  .navigation-links ul {
+    text-align: center;
+  }
+  
+  .navigation-links ul a {
+    padding: 26px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    font-size: 1.1rem;
+  }
+  
+  .navigation-links ul a  select{
+  border: none;
+  background: none;
+  color: rgb(162, 162, 162);
+  font-size: 1.1rem;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  
+  /*hero section */
+  .main-container {
+    display: flex;
+    height: 60vh;
+    min-height: 100%;
+    background: linear-gradient(
+        rgba(229, 239, 255, 0.844),
+        rgba(229, 239, 255, 0.876)
+      ),
+      url(../images/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
   }
-
-  .other-links {
-    margin-left: -15rem;
+  
+  .main-content {
+    padding-top: 7rem;
+    padding-left: 5rem;
+    width: 50vw;
+    text-transform: capitalize;
+  }
+  .main-content h2 {
+    font-size: 3.5vw;
+    width: 50vw;
+    font-weight: bolder;
+  }
+  
+  .main-content h2 span {
+    color: rgba(37, 110, 228, 1);
+    font-style: italic;
+  }
+  
+  .main-content p {
+    width: 45vw;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+  }
+  
+  .main-content button {
+    width: 12vw;
+    height: 3.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+    text-transform: capitalize;
+    padding: 0.5rem;
+    border: none;
+    background: rgba(37, 110, 228, 1);
+    color: #fefefe;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  .main-container-image {
+    width: 50vw;
+  }
+  .main-container-image img {
+    width: 102%;
+  }
+  
+  /*card-section */
+  .card-section {
     width: 100vw;
+    height: 30rem;
+    /* background: rgb(247, 247, 247); */
   }
-
-  .search-input {
-    width: 28vw;
+  .card {
+    width: 85vw;
+    height: 15vh;
+    background: #ffffff;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.2rem;
+    box-shadow: 0px 2px 13px 0px rgba(177, 172, 172, 0.75);
+    overflow: hidden;
   }
-
-  .search-input input {
-    font-size: 0.8rem;
-    margin-left: -2rem;
-    width: 25vw;
+  
+  .card1:last-child {
+    border-right: none !important;
   }
-
-  .nav-links {
-    margin-left: -10px;
+  a .card
+  .card1 {
+    padding: 1.2rem;
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    text-transform: capitalize;
+    border-right: 1px solid rgb(217, 217, 217);
+  }
+  
+  .card1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  /*for the product list and services list */
+  
+  .products {
+    width: 100vw;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: -16rem;
+    background: rgb(247, 247, 247);
+  }
+  
+  .products-list {
+    width: 90vw;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .product1 {
+    background: #ffffff;
+    padding: 0.6rem;
     width: 20vw;
+    height: 40vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  /* .nav-links select{
-  /* display: none; */
-  */ .nav-links button {
-    width: 10vw;
+  
+  .product1:hover,
+  .service:hover {
+    box-shadow: 0px 2px 13px 0px rgba(175, 174, 174, 0.75);
   }
-
-  .navigation-links {
+  
+  .product-image img,
+  .service-image img {
+    width: 19vw;
+  }
+  
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     width: 100%;
   }
-}
+  
+  .product-detail-title {
+    text-transform: capitalize;
+    font-weight: bolder;
+    align-self: flex-start;
+  }
+  
+  .product-price {
+    align-self: flex-start;
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .product-price span:first-child {
+    color: #393939;
+  }
+  
+  .product-price span:first-child strong {
+    color: #000000;
+  }
+  
+  .product-price span:last-child {
+    color: rgba(37, 110, 228, 1);
+  }
+  
+  /*for service list*/
+  .services {
+    width: 100vw;
+    height: auto;
+    padding: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    background: rgb(248, 247, 247);
+  }
+  
+  .service {
+    background: #fbfbfb;
+    padding: 0.6rem;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .services-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .service-detail-title {
+    color: rgb(35, 79, 174);
+    align-self: flex-start;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
+  }
+  .service-tag {
+    align-self: flex-start;
+  }
+  
+  /*the flier section */
+  .fliers {
+    /* background: #f3f2f2; */
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 0.1rem;
+    background: rgb(248, 247, 247);
+  }
+  
+  .rice-flier {
+    background: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 85%;
+    height: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .rice-flier img {
+    width: 100%;
+    height: 18rem;
+  }
+  
+  .food-flier {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 1rem;
+    gap: 0.5rem;
+    background: #f9f9f9;
+  }
+  
+  .food1 {
+    width: 45%;
+    height: auto;
+    background: url(../images/food-flierImg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .food2 {
+    width: 45%;
+    height: auto;
+    background: url(../images/pharma.png);
+    background-color: #fbfbfb;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .food1 span:first-child,
+  .food2 span:first-child {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #f4f4f4;
+  }
+  
+  .food1 span:nth-child(2),
+  .food2 span:nth-child(2) {
+    font-size: 1.5rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #f4f4f4;
+  }
+  
+  .food1 button,
+  .food2 button {
+    width: 14rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    color: #0530af;
+    font-size: 1.2rem;
+    border: none;
+    text-transform: capitalize;
+    white-space: no-wrap;
+  }
+  
+  /*card list component */
+  .fresh-product {
+    text-align: center;
+    background: rgb(250, 250, 250);
+    margin-top: 3rem;
+  }
+  .fresh-list {
+    padding: 3rem;
+    background: #ebebeb;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .fresh-card {
+    background: #ffffff;
+    padding: 0.6rem;
+    width: 16rem;
+    height: 45vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  .fresh-image img {
+    width: 15rem;
+  }
+  .fresh-card:hover {
+    box-shadow: 0px 2px 13px 0px rgba(175, 174, 174, 0.75);
+  }
+  .fresh-detail {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  .fresh-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fresh-title span:first-child {
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  
+  .fresh-title span:nth-child(2) {
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: grey;
+  }
+  
+  .price-list {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+  }
+  
+  .main-price {
+    color: rgb(36, 82, 220);
+    font-weight: bolder;
+  }
+  .slashed-price {
+    color: rgb(156, 156, 156);
+    text-decoration: line-through;
+  }
+  .star {
+    margin-top: 0.5rem;
+  }
+  
+  /*for the last banner List */
+  .shopp-banner {
+    background: rgb(240, 197, 118);
+    width: 90vw;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  
+  .banner-images {
+    background: orange;
+    width: 55%;
+    height: 20rem;
+    display: flex;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+  
+  .banner-images img {
+    width: 18rem;
+  }
+  
+  .banner-images img:last-child {
+    width: 20rem;
+  }
+  
+  .banner-writeup {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem;
+    align-items: center;
+  }
+  .banner-writeup span:first-child {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    align-self: flex-start;
+    font-weight: bold;
+  }
+  
+  .banner-writeup span:nth-child(2) {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    align-self: flex-start;
+  }
+  
+  .banner-writeup button {
+    align-self: flex-start;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    width: 14rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  /*styling for mobile app ad */
+  
+  .mobileApp-ad {
+    background: linear-gradient(
+        rgba(229, 239, 255, 0.844),
+        rgba(229, 239, 255, 0.876)
+      ),
+      url(../images/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    display: flex;
+  }
+  
+  .mobileApp-detail {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 4rem;
+  }
+  
+  .mobileApp-detail span:nth-child(1) {
+    font-size: 1.5rem;
+    color: #0530af;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .mobileApp-detail span:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 0.2rem;
+  }
+  .mobileApp-detail span:nth-child(3) {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    width: 40rem;
+  }
+  
+  .mobileApp-detail span:last-child {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    color: #0530af;
+    font-weight: bold;
+  }
+  
+  .mobile-store {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.2rem;
+  }
+  
+  .mobileApp-store img {
+    width: 14rem;
+  }
+  
+  .mobileMock {
+    width: 50%;
+  }
+  
+  .mobileMock img {
+    width: 38rem;
+  }
+  /**style for a brief form-card */
+  .form-card {
+    background: linear-gradient(rgba(2, 30, 75, 0.844), rgba(1, 22, 55, 0.876)),
+      url(../images/Ellipse\ 12.png);
+    width: 90vw;
+    height: 15rem;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-card span:nth-child(1) {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .form-card span:nth-child(2) {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    width: 40rem;
+    margin-top: 1.5rem;
+  }
+  
+  .form-card span:nth-child(3) {
+    display: flex;
+    margin-top: 1rem;
+    gap: 10px;
+  }
+  
+  .form-card span:nth-child(3) input {
+    width: 20rem;
+    padding: 0.8rem;
+  }
+  
+  .form-card span:nth-child(3) button {
+    width: 12rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background: #4d71df;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+  }
+  /*footer styles */
+  footer{
 
+  }
+
+}
 /* tablet design with toogle*/
 @media screen and (max-width: 768px) {
   body {
@@ -1291,123 +1864,10 @@ footer {
     font-size: 1.1rem;
   }
   /*footer styles */
-  footer {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-footer-container {
-    display: flex;
-    gap: 4rem;
-  }
-  .left-container1 {
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-    justify-content: left;
-  }
-  .left-container1 span:nth-child(1) {
-    font-size: 2rem;
-  }
-  .left-container1 span:nth-child(2) {
-    font-size: 1.1rem;
-    width: 17rem;
-    text-align: left;
-  }
-  .left-container2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .left-container2 span:nth-child(1) {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-
-  .left-container2-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.2rem;
-  }
-
-  .left-container2-links a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    text-transform: capitalize;
-  }
-
-  /*for the right footer*/
-  .right-footer-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: -7rem;
-  }
-
-  .right-footer-container1 {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-  }
-
-  .right-footer-container1 span:nth-child(1) {
-    font-size: 1.2rem;
-  }
-
-  .right-footer-container1 span:nth-child(2),
-  .right-footer-container1 span:nth-child(3) {
-    font-size: 1.1rem;
-    text-transform: capitalize;
-  }
-
-  .right-footer-container1 span:nth-child(4) {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-  }
-  .right-footer-container1-images {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .right-footer-container2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-  }
-
-  .right-footer-container2 span:nth-child(1) {
-    font-size: 1.2rem;
-  }
-
-  .right-footer-container2 span:nth-child(2) {
-    font-size: 1.1rem;
-    text-transform: capitalize;
-  }
-  .footer-input input {
-    width: 13rem;
-  }
-  .footer-input button {
-    width: 10rem;
-    background: #4d71df;
-    color: #ebebeb;
-    border: none;
-    padding: 8px;
-    font-size: 1.1rem;
-    text-transform: capitalize;
-  }
-  .page-author {
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #373737;
-  }
+ 
 }
 
-@media screen and (max-width: 569px) {
+/* @media screen and (max-width: 569px) {
   .products {
     margin-top: -8rem;
   }
@@ -1465,7 +1925,7 @@ footer {
   .service-image img {
     width: 13rem;
   }
-}
+} */
 
 @media screen and (max-width: 425px) {
   body {
@@ -1526,7 +1986,6 @@ footer {
   }
 
   .card {
-    margin-top:-18rem ;
     width: 100%;
   }
   .products {
@@ -1727,10 +2186,12 @@ footer {
     width: 85vw;
     margin-top: 3rem;
     padding-bottom: 2rem;
+    flex-direction: column;
   }
   .left-footer-container {
     display: flex;
-    gap: 0rem;
+    gap: 4rem;
+    margin-left: -15rem;
   }
   .left-container1 {
     display: flex;
@@ -1763,6 +2224,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     width: 90vw;
+    margin-left: -2rem;
+    margin-top: 2rem;
   }
 
   .right-footer-container1 {

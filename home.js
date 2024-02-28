@@ -67,7 +67,7 @@ const products = document.querySelector(".products-list");
 topSellingProduct.map((product) => {
   products.innerHTML += `
 
-  <a href="./cart.html" target="_blank"><div class="product1">
+  <a href="./cart.html" target="_blank" class="first-anchor"><div class="product1">
     <div class="product-image">
       <img src=${product.img} alt="">
     </div>
