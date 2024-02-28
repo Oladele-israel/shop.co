@@ -66,7 +66,8 @@ const topSellingProduct = [
 const products = document.querySelector(".products-list");
 topSellingProduct.map((product) => {
   products.innerHTML += `
-    <div class="product1">
+
+  <a href="./cart.html" target="_blank"><div class="product1">
     <div class="product-image">
       <img src=${product.img} alt="">
     </div>
@@ -77,7 +78,7 @@ topSellingProduct.map((product) => {
       <span> save $100</span>
    </div>
     </div>
-  </div>
+  </div></a>
     `;
 });
 

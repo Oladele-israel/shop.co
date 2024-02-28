@@ -27,8 +27,8 @@
               <option value="shop">international</option>
             </select>
             <div class="cart-icon">
-              <label for="cart">cart</label>
-              <img src="./images/cart-icon.png" alt="">
+             <a href="./product.html" target="_blank"><label for="cart">cart</label></a> 
+            <a href="./cart.html" target="_blank"> <img src="./images/cart-icon.png" alt=""></a> 
             </div>
             <button class="login-btn">login</button>
             <button class="signup-btn">sign Up</button>
@@ -37,11 +37,10 @@
         </div>
         </div>
       </nav>
-
       <!--navigation-links-->
       <div class="navigation-links">
         <ul>
-          <a href="#">home</a>
+          <a href="./index.html" target="_blank">home</a>
           <a href="#">
             <select name="" id="">
               <option value="">All categories</option>
@@ -49,35 +48,29 @@
             </select>
           </a>
           <a href="#">sell on NeraMarkt</a>
-          <a href="#">about</a>
+          <a href="./about.html" target="_blank">about</a>
           <a href="#">support</a>
           <a href="#"> track order</a>
         </ul>
       </div>
-
-
-      <!--mobile nav-->
-
+<!--mobile nav-->
       <nav class="mobile-nav">
         <!--logo-->
         <div class="mobile-logo">
-          JEGEMart
+          JegaMart
         </div>
-
-        <!--search bar including the shopping and acct icon-->
+<!--search bar including the shopping and acct icon-->
         <div class="mobile-other-links">
           <div class="mobile-search-input">
             <img src="./images/header-search.png" alt="" />
             <input type="text" placeholder="search for products and categories" />
           </div>
-        
-          <div class="burger">
+        <div class="burger">
             <div class="tab"></div>
             <div class="tab"></div>
             <div class="tab"></div>
           </div>
-
-          <div class="mobile-links">
+<div class="mobile-links">
             <div class="first-links">
               <select name="" id="">
                 <option value="shop">international</option>
@@ -92,7 +85,7 @@
     
             <div class="secondLinks">
               <ul>
-                <a href="./index.html">home</a>
+                <a href="#">home</a>
                 <a href="#">
                   <select name="" id="">
                     <option value="">All categories</option>
@@ -105,10 +98,14 @@
                 <a href="#"> track order</a>
               </ul>
             </div>
+           
           </div>
+
       </div>
       <!--mobile links-->
+     
       </nav>
+
     </header>
 
     <div class="cart">
@@ -136,22 +133,87 @@
                     <span class="offer">10%</span>
                 </span>
             </div>
-            <div>
-                <span>quantity to add: <button>+</button> 1 <button>-</button></span>
+            <div class="description-quantity">
+                <span>quantity <button>+</button> 1 <button>-</button></span>
             </div>
-            <div>
+            <div class="add-button">
                 <button>add to cart</button>
             </div>
-            <div>
-                <span>share this product</span>
-                <span>
+            <div class="product-share">
+                <span>share this product:</span>
+                <spa class="share-social">
                     <img src="/images/Twitter.png" alt="">
                     <img src="./images/insta.png" alt="">
                 </span>
             </div>
         </div>
     </div>
-
+    <!--product description-->
+    <div class="product-overview">
+      <div class="overview-title">
+        <span>description</span>
+        <span>specification</span>
+        <span>reviews</span>
+      </div>
+      <div class="overview-detail">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam, tempore placeat blanditiis impedit sunt quidem in esse temporibus, commodi aliquid voluptates expedita odit quia at eius iste nesciunt repudiandae ratione odio. Numquam asperiores, reprehenderit ipsum beatae totam doloremque. Labore!</span>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis sequi dignissimos natus eos ut eius, deserunt voluptate praesentium quas ex asperiores voluptates rem reiciendis consequuntur blanditiis ipsum nam a.</span>
+      </div>
+    </div>
+    <!--similar product-->
+    <section class="fresh-product">
+      <h1> fresh deals</h1><br>
+      <div class="fresh-list"> 
+        
+        <div class="fresh-card">
+          <div class="fresh-image">
+            <img src="./images/knorr-cube.png" alt="">
+          </div>
+          <div class="fresh-detail">
+            <div class="fresh-title" >
+              <span>Knorr-cube</span>
+            </div>
+            <div class="star"><img src="./images/star-icon.png" alt=""></div>
+          </div>
+        </div>
+    
+        <div class="fresh-card">
+          <div class="fresh-image">
+            <img src="./images/product-images/goli-oil.png.png" alt="">
+          </div>
+          <div class="fresh-detail">
+            <div class="fresh-title" >
+              <span>drugs</span>
+            </div>
+            <div class="star"><img src="./images/star-icon.png" alt=""></div>
+          </div>
+        </div>
+    
+        <div class="fresh-card">
+          <div class="fresh-image">
+            <img src="./images/product-images/yam-tuber.png.png" alt="">
+          </div>
+          <div class="fresh-detail">
+            <div class="fresh-title" >
+              <span>yam</span>
+            </div>
+            <div class="star"><img src="./images/star-icon.png" alt=""></div>
+          </div>
+        </div>
+    
+        <div class="fresh-card">
+          <div class="fresh-image">
+            <img src="./images/product-images/goli-oil.png.png" alt="">
+          </div>
+          <div class="fresh-detail">
+            <div class="fresh-title" >
+              <span>Knorr-cube</span>
+            </div>
+            </div>
+            <div class="star"><img src="./images/star-icon.png" alt=""></div>
+          </div>
+        </div>     
+    </section>
 <footer>
   <div class="left-footer-container">
       <div class="left-container1">
@@ -195,6 +257,7 @@
           <button>suscribe</button>
         </span>
     </div>
+
   </div>
 </footer>
 <div class="page-author">copyright&copy2024</div>
