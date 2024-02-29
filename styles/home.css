@@ -117,6 +117,16 @@ header {
   cursor: pointer;
   border: none;
 }
+
+.login-btn a {
+  color: #dcdada;
+  text-decoration: none;
+}
+
+.signup-btn a {
+  color: #000000;
+  text-decoration: none;
+}
 .signup-btn {
   padding: 0.5rem;
   border: 1px solid rgb(188, 186, 186);
